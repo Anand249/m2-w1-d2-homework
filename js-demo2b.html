@@ -18,24 +18,24 @@
 
                 $.getJSON('./data.json', function (data) {
                     $('table caption').text(data.title);
-                    data_row = [data.heading, data.head1, data.head2, data.head3, data.head4]
+                    dataValue = [data.heading, data.head1, data.head2, data.head3, data.head4]
                     for (var i = 0; i < 5; i++) {
-                        $('#showheading th:nth-child(' + (i + 1) + ')').text(data_row[i]);
+                        $('#showheading th:nth-child(' + (i + 1) + ')').text(dataValue[i]);
                     }
 
-                    data_row = [data.subheadcal, data.cal1, data.cal2, data.cal3, data.cal4]
+                    dataValue = [data.subheadcal, data.cal1, data.cal2, data.cal3, data.cal4]
                     for (var i = 0; i < 5; i++) {
-                        $('#showcalories td:nth-child(' + (i + 1) + ')').text(data_row[i]);
+                        $('#showcalories td:nth-child(' + (i + 1) + ')').text(dataValue[i]);
                     }
 
-                    data_row = [data.subheadfat, data.fat1, data.fat2, data.fat3, data.fat4]
+                    dataValue = [data.subheadfat, data.fat1, data.fat2, data.fat3, data.fat4]
                     for (var i = 0; i < 5; i++) {
-                        $('#showfat td:nth-child(' + (i + 1) + ')').text(data_row[i]);
+                        $('#showfat td:nth-child(' + (i + 1) + ')').text(dataValue[i]);
                     }
 
-                    data_row = [data.subheadven, data.ven1, data.ven2, data.ven3, data.ven4]
+                    dataValue = [data.subheadven, data.ven1, data.ven2, data.ven3, data.ven4]
                     for (var i = 0; i < 5; i++) {
-                        $('#showven td:nth-child(' + (i + 1) + ')').text(data_row[i]);
+                        $('#showven td:nth-child(' + (i + 1) + ')').text(dataValue[i]);
                     }
                 });
             });
